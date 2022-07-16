@@ -7,7 +7,7 @@ const chekForm = (event) => {
   const password = event.currentTarget.elements.password.value;
 
   if (email === "" || password === "") {
-    alert("Все поля должны быть заполнены");
+    return alert("Все поля должны быть заполнены");
   } else {
     const formData = {
       email,
